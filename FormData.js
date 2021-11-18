@@ -360,7 +360,6 @@ Test Passed: Value == true`
 function makeIToARightFormat(changeit){
     
     let howManyTimesAreLogInText=changeit.match(/Log/g).length;
-    let result;
     for(let i=0;i<=howManyTimesAreLogInText;i++){
 
     changeit = changeit.replace(/log/i,`${i}.`);
@@ -368,6 +367,7 @@ function makeIToARightFormat(changeit){
     changeit = changeit.replace(/Test Passed: Value == false/i,`this is false \n` );
         
     }
+    
     console.log(changeit);
 }
 
